@@ -87,10 +87,19 @@ a {
 }
 
 .nav-brand {
-    color: var(--electric-blue);
-    font-size: 2rem;
+    display: inline-flex;
+    align-items: center;
     margin: 0;
-    text-shadow: 0 0 10px rgba(0, 191, 255, 0.4);
+}
+
+.nav-brand-logo {
+    display: block;
+    width: auto;
+    height: 54px;
+    max-width: 220px;
+    object-fit: contain;
+    animation: none;
+    filter: drop-shadow(0 0 10px rgba(0, 191, 255, 0.35));
 }
 
 .nav-links {
@@ -615,6 +624,11 @@ footer {
 
     .nav-links a {
         font-size: 0.95rem;
+    }
+
+    .nav-brand-logo {
+        height: 44px;
+        max-width: 180px;
     }
 
     .container {
